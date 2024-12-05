@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style/style.css"/>
+    <script src="js/data.js" type="text/javascript"></script>
+</head>
+<body>
+    <main>
+        <div class="slider">
+          <div class="left_arrow">
+            <a href="javascript:void(sliderTo(1))" class="arrow slider_left_arrow"></a>
+          </div>
+          <div class="slider_content"></div>
+          <div class="right_arrow">
+            <a href="javascript:sliderTo(-1)" class="arrow slider_right_arrow"></a>
+          </div>
+        </div>
+        <img src="img/map.jpg" class="map"/>
+        <img src="img/girl.png" class="girl"/>
+        <a href="javascript: void(0)" class="chat"></a>
+        <a href="javascript: void(0)" class="too-univer" onclick="step(null, 1)"></a>
+        <a href="javascript: void(0)" class="letter" onclick="step(0)"></a>
+        <a href="javascript: void(0)" class="rating" onclick="openPopup(1)"></a>
+      </main>
+      
+      <div class="popup" onclick="openPopup(event)">
+        <dialog open>
+            <div class="content">
+                <a href="javascript:void(0)" class="cross" onclick="openPopup(event, 1)"></a>
+                <div class="title">Рейтинг игроков</div>
+                <div class="out_table">
+                  <div class="table_header">
+                    <div class="row header">
+                        <div class="cell cell_first">Место</div>
+                        <div class="cell picture"></div>
+                        <div class="cell fio">Имя Фамилия</div>
+                        <div class="cell cell_last">Опыт</div>
+                    </div>
+                  </div>
+                  <div class="table_content"></div>
+                </div>
+            </div>
+        </dialog>
+      </div>
+      <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

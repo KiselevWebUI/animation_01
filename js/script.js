@@ -76,14 +76,14 @@ function renderSlider(){
 
 function initSliderArrows(){
     if(cur_slider_table < -1*sliderStep){
-        slider_left_arrow.classList.remove('hide')
+        slider_right_arrow.classList.remove('hide')
     }else{
-        slider_left_arrow.classList.add('hide')
+        slider_right_arrow.classList.add('hide')
     }
     if(sliderStepMax - Math.abs(cur_slider_table) < 0){
-        slider_right_arrow.classList.add('hide')
+        slider_left_arrow.classList.add('hide')
     }else{
-        slider_right_arrow.classList.remove('hide')
+        slider_left_arrow.classList.remove('hide')
     }
 }
 
